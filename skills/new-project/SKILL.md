@@ -5,10 +5,20 @@ description: Start a project with a living context. Asks what the project is abo
 
 You are starting a project so that every later session can pick it up cheaply from three small files.
 
+## 0. Check there is a folder that stays
+
+The files only help where they survive between sessions: a project folder in Cowork or Claude Code.
+If you are in a plain chat with no project folder — files written here won't be there in the next
+conversation — say so in one line, suggest opening the project's folder in Cowork or Claude Code,
+and don't create the files.
+
 ## 1. Ask what the project is — like a person, not a form
 
 Ask one or two questions at a time. Gather the charter: what it is (one sentence) · why, the goal ·
 done when · constraints · non-goals. If the user has already said all of it, don't ask again.
+
+If the project is already under way — there is work in the folder, or the user says so — also ask
+where it stands now and what has been decided so far.
 
 The charter is a living hypothesis, not a contract. "Don't know yet" is a valid answer, and an empty
 field is a signal too. For creative or research projects, "done when" and "non-goals" can wait.
@@ -33,8 +43,8 @@ filling in only the parts in angle brackets.
   the Charter and "How this project breathes" sections and, on their yes, add them at the top of the
   existing file. Everything that was there stays.
 - Create STATE.md with the phase and the first next step.
-- Create DECISIONS.md. Add an entry only for a decision the user actually made in this conversation,
-  with the reason they gave; otherwise leave the header alone.
+- Create DECISIONS.md. Add an entry only for a decision the user actually told you about, with the
+  reason they gave; otherwise leave the header alone.
 
 Don't create INBOX.md now: `park` creates it the first time a thought is parked.
 
@@ -82,7 +92,7 @@ read in one sitting.
 ```markdown
 # STATE — where we are
 
-**Phase:** start.
+**Phase:** <start — or, for a project already under way, where it stands, in the user's words>.
 
 **Next step:** <…>
 ```

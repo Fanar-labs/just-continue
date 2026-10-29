@@ -6,6 +6,12 @@ description: Pick up a project where it was left, so the user can just continue 
 You are opening a session so that the user doesn't have to re-explain anything. Read only what this
 needs.
 
+## 0. Check there is a folder that stays
+
+The project's memory lives in its folder. If you are in a plain chat with no project folder — files
+written here won't be there in the next conversation — say so in one line and suggest opening the
+project's folder in Cowork or Claude Code.
+
 ## 1. Find the project
 
 - The user named the project, and the current folder or a folder inside it matches — by the folder's

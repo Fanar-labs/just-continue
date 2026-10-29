@@ -5,11 +5,26 @@
 Every new session with Claude starts blank. What the project is, what you decided and why, what
 comes next — you tell it all over again, or Claude guesses from whatever it finds in the folder.
 
-just-continue keeps that in three small files in the project folder. When you come back, you say
-which project, and Claude is already up to speed.
+just-continue gives each project a memory: three small files in the project folder. When you come
+back, you say which project, and Claude is already up to speed.
 
 > Not a log of everything that happened. Only what the next session needs: what the project is,
 > where it stands, and why it was decided that way.
+
+## Start
+
+Open your project's folder in Cowork or Claude Code and say:
+
+> Let's continue <your project>.
+
+- **A brand-new project:** say *Let's start a new project* and answer two or three questions.
+- **Already halfway through:** the same first line works. Claude sees there are no notes yet,
+  offers to set them up, and fills them in from what you tell it.
+- **From then on:** say *that's it for today* when you stop, and *let's continue <your project>*
+  when you come back.
+
+It needs a project folder. In a plain chat on claude.ai, files don't survive from one conversation
+to the next, so there the plugin has nowhere to keep its memory.
 
 ## What coming back looks like
 
@@ -35,15 +50,6 @@ A test project, four days later. The whole message is one line:
 
 Without these files, Claude has only the code to guess from.
 
-## Install
-
-In Claude Code:
-
-```
-/plugin marketplace add Fanar-labs/just-continue
-/plugin install just-continue@just-continue
-```
-
 ## How it works
 
 Work on a project gets lost at four moments: when it starts without a clear idea of what it is,
@@ -53,7 +59,7 @@ each moment.
 
 | skill | when | what it does |
 |---|---|---|
-| `new-project` | a project starts | asks what the project is, then creates `CLAUDE.md` (what it is and how we work), `STATE.md` (where things stand) and `DECISIONS.md` (why) |
+| `new-project` | a project starts, or gets its notes halfway through | asks what the project is and where it stands, then creates `CLAUDE.md` (what it is and how we work), `STATE.md` (where things stand) and `DECISIONS.md` (why) |
 | `catch-up` | you come back: "let's continue the recipe site" | finds the project, reads the three files, says where you stopped and what comes next — then you go on |
 | `wrap-up` | a session ends: "that's it for today" | rewrites `STATE.md` as a snapshot of now, adds the reasons for decisions to `DECISIONS.md`, leaves the next step |
 | `park` | any time: "park this: …" | adds a stray thought to `INBOX.md` as one line; it is sorted at the next catch-up |
@@ -65,11 +71,14 @@ skill. In Claude Code they are also commands: `/just-continue:new-project`,
 Several projects in one folder? Name the one you want. If you name none, Claude lists the most
 recent ones and asks.
 
-## Where it works
+## Install
 
-In Claude Code (the terminal, an IDE, or the Code tab of the desktop app) and in Cowork — anywhere
-Claude works inside a project folder. A plain chat on claude.ai has no folder that keeps files
-between conversations, so there the skills have nowhere to write.
+In Claude Code:
+
+```
+/plugin marketplace add Fanar-labs/just-continue
+/plugin install just-continue@just-continue
+```
 
 ## What it writes and sends
 
@@ -84,6 +93,9 @@ sitting — for you, for Claude, or for any other tool.
 
 ## Versions
 
+- 0.2.1 · 2026-10-30 — "memory" in the description; a Start section; `new-project` records where a
+  project already under way stands; in a plain chat the skills say there is no folder instead of
+  writing files that vanish.
 - 0.2.0 · 2026-10-30 — first public version.
 
 ## License
