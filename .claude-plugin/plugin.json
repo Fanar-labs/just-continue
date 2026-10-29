@@ -1,0 +1,23 @@
+{
+  "name": "just-continue",
+  "version": "0.2.0",
+  "description": "Keeps each project's context in three small files — what it is, where it stands, why it was decided — so you name the project and just continue, without explaining it again. Four skills: new-project, catch-up, wrap-up, park.",
+  "author": {
+    "name": "Fanarlabs",
+    "email": "hello@fanarlabs.com",
+    "url": "https://github.com/Fanar-labs"
+  },
+  "homepage": "https://github.com/Fanar-labs/just-continue",
+  "repository": "https://github.com/Fanar-labs/just-continue",
+  "license": "MIT",
+  "keywords": [
+    "project memory",
+    "context",
+    "continue",
+    "session handoff",
+    "claude.md",
+    "state",
+    "decisions",
+    "inbox"
+  ]
+}

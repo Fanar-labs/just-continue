@@ -1,0 +1,20 @@
+{
+  "name": "just-continue",
+  "description": "Marketplace for the just-continue plugin by Fanarlabs",
+  "owner": {
+    "name": "Fanarlabs",
+    "email": "hello@fanarlabs.com"
+  },
+  "plugins": [
+    {
+      "name": "just-continue",
+      "description": "Keeps each project's context in three small files, so you name the project and just continue, without explaining it again.",
+      "version": "0.2.0",
+      "source": "./",
+      "author": {
+        "name": "Fanarlabs",
+        "email": "hello@fanarlabs.com"
+      }
+    }
+  ]
+}
