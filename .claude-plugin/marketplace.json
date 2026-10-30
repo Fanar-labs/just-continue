@@ -9,7 +9,7 @@
     {
       "name": "just-continue",
       "description": "Project memory in three small files — what it is, where it stands, why it was decided. Name the project and just continue, without explaining it again.",
-      "version": "0.2.1",
+      "version": "0.2.2",
       "source": "./",
       "author": {
         "name": "Fanarlabs",

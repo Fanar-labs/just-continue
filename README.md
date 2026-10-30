@@ -1,15 +1,14 @@
 # just-continue
 
-**Explain your project once. After that, name it and just continue.**
+Claude remembers your project between sessions.
 
-Every new session with Claude starts blank. What the project is, what you decided and why, what
-comes next — you tell it all over again, or Claude guesses from whatever it finds in the folder.
+When you come back — tomorrow or in a month — Claude already knows what the project is, where you
+stopped, what you decided and why. You name the project and continue.
 
-just-continue gives each project a memory: three small files in the project folder. When you come
-back, you say which project, and Claude is already up to speed.
+The memory is three small files in the project folder. Claude writes them as you work and reads
+them when you come back. You can open and edit them too.
 
-> Not a log of everything that happened. Only what the next session needs: what the project is,
-> where it stands, and why it was decided that way.
+Without it, every new session starts blank.
 
 ## Start
 
@@ -47,8 +46,6 @@ A test project, four days later. The whole message is one line:
 >   is supposed to print cleanly.
 >
 > Sort it now? Or continue with the first build run?
-
-Without these files, Claude has only the code to guess from.
 
 ## How it works
 
@@ -93,6 +90,8 @@ sitting — for you, for Claude, or for any other tool.
 
 ## Versions
 
+- 0.2.2 · 2026-10-30 — the README opens with what you get: Claude remembers your project between
+  sessions.
 - 0.2.1 · 2026-10-30 — "memory" in the description; a Start section; `new-project` records where a
   project already under way stands; in a plain chat the skills say there is no folder instead of
   writing files that vanish.
