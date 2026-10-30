@@ -88,6 +88,7 @@ sitting — for you, for Claude, or for any other tool.
 
 ## Versions
 
+- 0.2.5 · 2026-10-30 — an icon for the directory listing.
 - 0.2.4 · 2026-10-30 — the directory description says what the plugin is: project memory for Claude.
 - 0.2.3 · 2026-10-30 — removed "every new session starts blank": Claude has memory of its own, so
   the line wasn't true.

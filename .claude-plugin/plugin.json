@@ -1,6 +1,6 @@
 {
   "name": "just-continue",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Project memory for Claude: it remembers what your project is, where it stands, and what was decided and why — in three small files in the project folder.",
   "author": {
     "name": "Fanarlabs",
