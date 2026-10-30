@@ -8,8 +8,6 @@ stopped, what you decided and why. You name the project and continue.
 The memory is three small files in the project folder. Claude writes them as you work and reads
 them when you come back. You can open and edit them too.
 
-Without it, every new session starts blank.
-
 ## Start
 
 Open your project's folder in Cowork or Claude Code and say:
@@ -90,6 +88,8 @@ sitting — for you, for Claude, or for any other tool.
 
 ## Versions
 
+- 0.2.3 · 2026-10-30 — removed "every new session starts blank": Claude has memory of its own, so
+  the line wasn't true.
 - 0.2.2 · 2026-10-30 — the README opens with what you get: Claude remembers your project between
   sessions.
 - 0.2.1 · 2026-10-30 — "memory" in the description; a Start section; `new-project` records where a
